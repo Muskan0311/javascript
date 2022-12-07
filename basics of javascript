@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> if you re-declare a javascript variable,it will not lose its value</p>
+    <p id="abc"></p>
+    <p id="xyz"></p>
+    <p id="pqr"></p>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <p id="d"></p>
+    <p id="e"></p>
+    <p id="f"></p>
+    <p id="g"></p>
+    <p id="h"></p>
+    <p id="i"></p>
+    <script>
+        var a=5;
+        var b=6;
+        var c=a+b;
+        document.getElementById("abc").innerHTML="The Total is:"+c;
+
+        var Name = "Muskan"
+        var Name;
+        document.getElementById("xyz").innerHTML=Name;
+
+        var x="Muskan"+" "+"Lamba"
+        document.getElementById("pqr").innerHTML=x;
+
+        var x="1"+2+3;
+        document.getElementById("a").innerHTML=x;
+
+        var x=1+"2"+3;
+        document.getElementById("b").innerHTML=x;
+
+        var x=1+2+"3";
+        document.getElementById("c").innerHTML=x;
+
+        name1 = "Welcome to ";
+        name1 += "Lovely Professional University";
+        document.getElementById("d").innerHTML=name1;
+
+        /*adding strings and numbers*/
+        var x = 5+10;
+        var y = "5"+10;
+        var z = "hello"+5;
+        document.getElementById("e").innerHTML=x+"<br>"+y+"<br>"+z;
+
+        document.getElementById("f").innerHTML=100+50*3;
+
+        document.getElementById("g").innerHTML=(100+50)*3;
+
+        var names=["Muskan","Lavanya","lavi"];
+        document.getElementById("h").innerHTML=names[0];
+        document.getElementById("h").innerHTML=names[1];
+        document.getElementById("h").innerHTML=names;
+
+        /*javascript objects */
+        var person = {
+            firstname:"Muskan",
+            lastname:"Lamba",
+            age:18
+        };
+        document.getElementById("i").innerHTML=person.firstname+" is "+person.age+" years old.";
+
+        /* type of operators */
+        
+
+
+
+
+        
+
+
+
+
+        
+
+
+        
+    </script>
+</body>
+</html>
